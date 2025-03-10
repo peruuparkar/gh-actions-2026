@@ -14,5 +14,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo i am going to fail
-      - run: exit 1
+      - run: exit 0
       - run: echo after failed exit
