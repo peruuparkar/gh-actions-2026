@@ -1,0 +1,13 @@
+---
+name: My NPM package workflow
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  node-20-release:
+    runs-on: self-hosted
+    steps:
+      - name : Checkout code
+        uses: actions/setup-node@v4
+      - name : Printing Folders
+        run: ls
