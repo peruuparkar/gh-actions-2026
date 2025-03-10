@@ -1,6 +1,8 @@
 name: 01 - Building Blocks
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+on: 
+  push:
+  workflow_dispatch:
 jobs:
   check-bats-version:
     runs-on: self-hosted
