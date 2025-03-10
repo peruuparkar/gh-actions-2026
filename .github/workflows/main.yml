@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
 jobs:
-  check-bats-version:
+  say-hello-version:
     runs-on: self-hosted
     steps:
       - run: echo hello
