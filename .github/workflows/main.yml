@@ -9,3 +9,10 @@ jobs:
     steps:
       - run: echo hello
       - run: echo hello-2
+  
+  say-2hello-version:
+    runs-on: self-hosted
+    steps:
+      - run: echo i am going to fail
+      - run: exit 1
+      - run: echo after failed exit
